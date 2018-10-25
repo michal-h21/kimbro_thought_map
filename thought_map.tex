@@ -1,11 +1,13 @@
-\documentclass[oneside]{scrbook}
+\documentclass[oneside,fontsize=13]{scrbook}
 
 \usepackage[english]{babel}
 \usepackage{geometry}
 \usepackage{fontspec}
 \usepackage{enumitem}
 \usepackage{microtype}
+\usepackage{hyperref}
 \usepackage{url}
+
 % TikZ graph drawing library doesn't work on my machine for some reason
 \usepackage{tikz}
 \usetikzlibrary{arrows}
@@ -17,8 +19,10 @@
 
 
 
-\setmainfont{TeX Gyre Schola}
-\setsansfont{TeX Gyre Schola}
+% \setmainfont{TeX Gyre Schola}
+% \setsansfont{TeX Gyre Schola}
+\setmainfont{fbb}
+\setsansfont{fbb}
 \newfontfamily\japanesefont{ipaexg.ttf}
 
 \setlist[itemize]{leftmargin=*}
@@ -41,6 +45,9 @@
   \kern-\wd0\box0%
   \textit{#2}\par\noindent%
 }
+
+% no double spaces after sentences
+\frenchspacing
 %twoside is for printing of actual book.
 %oneside is fine for things like PDFs.
 \begin{document}
@@ -3187,7 +3194,7 @@ to talk about some issues connected with Speed thoughts here.
 
 \begin{itemize}
   \item Pan-Subject speed-thought lists
-  \item Growth Process (Memento->Speed->Articulation)
+  \item Growth Process (Memento $\rightarrow$ Speed $\rightarrow$ Articulation)
   \item ``Completing'' a speed
 \end{itemize}
 
@@ -6747,7 +6754,7 @@ Here's my wish list for the future system.
 \item \emph{Infinite} canvas, and a zoom dial.
 \item Multicolor/font selections on the pen.
 \item Text OCR to dimensions, font, quality, italics and bold (style)
-\item square<-->sloppy niceness tools.
+\item square $\leftrightarrow$ sloppy niceness tools.
 \item Icon programmability.
 \end{itemize}
 
@@ -6859,7 +6866,7 @@ was. Se la vi.
 
 Sometimes I can't read my own handwriting. How could OCR? Se la vi.
 
-* square<-->sloppy niceness tools.
+* square $\leftrightarrow$ sloppy niceness tools.
 
 Finally, I want a setting on the pen for when you are drawing. On the
 pen, you flip the switch, (or maybe it's on the paper, whatever), and
